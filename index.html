@@ -13,7 +13,6 @@
     --brand-dark: #cc3520;
     --bg: #f7f7f5;
     --surface: #ffffff;
-    --surface2: #f2f1ef;
     --border: #e8e7e3;
     --text: #1a1a18;
     --text2: #6b6b67;
@@ -22,7 +21,6 @@
     --warning: #f59e0b;
     --radius: 16px;
     --radius-sm: 10px;
-    --shadow: 0 2px 12px rgba(0,0,0,0.07);
     --shadow-lg: 0 8px 32px rgba(0,0,0,0.10);
   }
 
@@ -37,7 +35,6 @@
     line-height: 1.6;
   }
 
-  /* ── HEADER ── */
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -68,18 +65,9 @@
     flex-shrink: 0;
   }
 
-  .logo-dot {
-    width: 8px; height: 8px;
-    background: var(--brand);
-    border-radius: 50%;
-    display: inline-block;
-  }
+  .logo-dot { width: 8px; height: 8px; background: var(--brand); border-radius: 50%; display: inline-block; }
 
-  .search-bar {
-    flex: 1;
-    max-width: 480px;
-    position: relative;
-  }
+  .search-bar { flex: 1; max-width: 480px; position: relative; }
 
   .search-bar input {
     width: 100%;
@@ -124,7 +112,6 @@
   .btn-ask:hover { background: var(--brand-dark); }
   .btn-ask:active { transform: scale(0.97); }
 
-  /* ── HERO ── */
   .hero {
     background: var(--text);
     color: #fff;
@@ -149,11 +136,7 @@
     margin: 0 auto 28px;
   }
 
-  .hero-search {
-    max-width: 520px;
-    margin: 0 auto;
-    position: relative;
-  }
+  .hero-search { max-width: 520px; margin: 0 auto; position: relative; }
 
   .hero-search input {
     width: 100%;
@@ -181,12 +164,8 @@
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
-    transition: background 0.2s;
   }
 
-  .hero-search button:hover { background: var(--brand-dark); }
-
-  /* ── LAYOUT ── */
   .layout {
     max-width: 1100px;
     margin: 0 auto;
@@ -202,7 +181,6 @@
     .sidebar { order: -1; }
   }
 
-  /* ── CATEGORIES ── */
   .categories {
     display: flex;
     gap: 8px;
@@ -231,7 +209,6 @@
   .cat-pill:hover { border-color: var(--brand); color: var(--brand); }
   .cat-pill.active { background: var(--brand); border-color: var(--brand); color: #fff; }
 
-  /* ── SECTION HEADER ── */
   .section-header {
     display: flex;
     align-items: center;
@@ -239,19 +216,9 @@
     margin-bottom: 16px;
   }
 
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-  }
+  .section-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; }
+  .count-badge { font-size: 12px; color: var(--text3); }
 
-  .count-badge {
-    font-size: 12px;
-    color: var(--text3);
-    font-weight: 400;
-  }
-
-  /* ── QUESTION CARDS ── */
   .questions-list { display: flex; flex-direction: column; gap: 12px; }
 
   .q-card {
@@ -263,18 +230,10 @@
     transition: box-shadow 0.2s, transform 0.15s;
   }
 
-  .q-card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-1px);
-  }
-
+  .q-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-1px); }
   .q-card.open { border-color: var(--brand); }
 
-  .q-card-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
+  .q-card-header { display: flex; align-items: flex-start; gap: 12px; }
 
   .q-cat-badge {
     font-size: 11px;
@@ -288,12 +247,7 @@
     margin-top: 2px;
   }
 
-  .q-title {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.4;
-    flex: 1;
-  }
+  .q-title { font-weight: 500; font-size: 15px; line-height: 1.4; flex: 1; }
 
   .q-meta {
     display: flex;
@@ -306,16 +260,10 @@
 
   .q-meta-item { display: flex; align-items: center; gap: 4px; }
 
-  .status-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
+  .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
   .status-dot.answered { background: var(--success); }
   .status-dot.open { background: var(--warning); }
 
-  /* ── ANSWERS ── */
   .answers-section {
     margin-top: 16px;
     padding-top: 16px;
@@ -330,13 +278,9 @@
     background: var(--bg);
     border-radius: var(--radius-sm);
     margin-bottom: 10px;
-    position: relative;
   }
 
-  .answer-item.top-answer {
-    background: #f0fdf8;
-    border: 1px solid #bbf7d0;
-  }
+  .answer-item.top-answer { background: #f0fdf8; border: 1px solid #bbf7d0; }
 
   .top-badge {
     display: inline-flex;
@@ -374,17 +318,9 @@
     transition: all 0.15s;
   }
 
-  .upvote-btn:hover, .upvote-btn.voted {
-    border-color: var(--brand);
-    color: var(--brand);
-  }
+  .upvote-btn:hover { border-color: var(--brand); color: var(--brand); }
 
-  /* Add answer */
-  .add-answer {
-    margin-top: 12px;
-    display: flex;
-    gap: 8px;
-  }
+  .add-answer { margin-top: 12px; display: flex; gap: 8px; }
 
   .add-answer input {
     flex: 1;
@@ -411,22 +347,25 @@
     font-size: 13px;
     cursor: pointer;
     white-space: nowrap;
-    transition: background 0.2s;
   }
 
-  .add-answer button:hover { background: var(--brand-dark); }
+  .loading { text-align: center; padding: 48px 20px; color: var(--text3); }
 
-  /* ── EMPTY STATE ── */
-  .empty-state {
-    text-align: center;
-    padding: 48px 20px;
-    color: var(--text3);
+  .spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--brand);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 12px;
   }
 
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .empty-state { text-align: center; padding: 48px 20px; color: var(--text3); }
   .empty-icon { font-size: 40px; margin-bottom: 12px; }
-  .empty-state p { font-size: 14px; }
 
-  /* ── MODAL ── */
   .modal-overlay {
     position: fixed;
     inset: 0;
@@ -449,22 +388,11 @@
     box-shadow: var(--shadow-lg);
   }
 
-  .modal h2 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+  .modal h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 20px; }
 
   .form-group { margin-bottom: 16px; }
 
-  .form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text2);
-    margin-bottom: 6px;
-  }
+  .form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--text2); margin-bottom: 6px; }
 
   .form-group input,
   .form-group textarea,
@@ -487,12 +415,7 @@
 
   .form-group textarea { resize: vertical; min-height: 80px; }
 
-  .modal-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    margin-top: 20px;
-  }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
 
   .btn-cancel {
     padding: 10px 20px;
@@ -503,10 +426,7 @@
     font-size: 14px;
     cursor: pointer;
     color: var(--text2);
-    transition: border-color 0.2s;
   }
-
-  .btn-cancel:hover { border-color: var(--text2); }
 
   .btn-submit {
     padding: 10px 24px;
@@ -518,12 +438,10 @@
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
-    transition: background 0.2s;
   }
 
-  .btn-submit:hover { background: var(--brand-dark); }
+  .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
 
-  /* ── SIDEBAR ── */
   .sidebar { display: flex; flex-direction: column; gap: 16px; }
 
   .sidebar-card {
@@ -556,7 +474,6 @@
   .icon-blue { background: #dbeafe; }
   .icon-green { background: #dcfce7; }
 
-  /* Crisis links */
   .crisis-link {
     display: flex;
     align-items: center;
@@ -569,42 +486,19 @@
 
   .crisis-link:last-child { border-bottom: none; padding-bottom: 0; }
   .crisis-link:hover { opacity: 0.75; }
-
   .crisis-link-left { display: flex; flex-direction: column; gap: 2px; }
   .crisis-name { font-size: 13px; font-weight: 500; color: var(--text); }
   .crisis-num { font-size: 12px; color: var(--brand); font-weight: 600; }
   .crisis-arrow { color: var(--text3); font-size: 14px; }
 
-  /* Stats */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
-  .stat-item {
-    background: var(--bg);
-    border-radius: var(--radius-sm);
-    padding: 12px;
-    text-align: center;
-  }
+  .stat-item { background: var(--bg); border-radius: var(--radius-sm); padding: 12px; text-align: center; }
 
-  .stat-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--brand);
-  }
-
+  .stat-num { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--brand); }
   .stat-label { font-size: 11px; color: var(--text3); margin-top: 2px; }
 
-  /* How it works */
-  .how-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 8px 0;
-  }
+  .how-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; }
 
   .how-num {
     width: 22px; height: 22px;
@@ -622,7 +516,6 @@
 
   .how-text { font-size: 13px; color: var(--text2); line-height: 1.5; }
 
-  /* Toast */
   .toast {
     position: fixed;
     bottom: 24px;
@@ -640,21 +533,13 @@
   }
 
   .toast.show { transform: translateX(-50%) translateY(0); }
-
-  /* No results */
-  .no-results { display: none; }
-  .no-results.visible { display: block; }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="#" class="logo">
-      <span class="logo-dot"></span>
-      Qatar Finder
-    </a>
+    <a href="#" class="logo"><span class="logo-dot"></span>Qatar Finder</a>
     <div class="search-bar">
       <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="text" id="header-search" placeholder="Search anything in Qatar..." oninput="handleSearch(this.value)">
@@ -663,7 +548,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <div class="hero">
   <h1>Find anything in <span>Qatar</span></h1>
   <p>Community-powered answers for expats and residents. Ask, answer, discover.</p>
@@ -673,14 +557,9 @@
   </div>
 </div>
 
-<!-- MAIN LAYOUT -->
 <div class="layout">
-
-  <!-- LEFT: Feed -->
   <div class="main-content">
-
-    <!-- Categories -->
-    <div class="categories" id="categories">
+    <div class="categories">
       <button class="cat-pill active" onclick="filterCat('all', this)">All</button>
       <button class="cat-pill" onclick="filterCat('Shopping', this)">🛍️ Shopping</button>
       <button class="cat-pill" onclick="filterCat('Food', this)">🍽️ Food</button>
@@ -692,126 +571,46 @@
       <button class="cat-pill" onclick="filterCat('Transport', this)">🚗 Transport</button>
     </div>
 
-    <!-- Section header -->
     <div class="section-header">
       <span class="section-title">Recent questions</span>
-      <span class="count-badge" id="count-badge">0 questions</span>
+      <span class="count-badge" id="count-badge"></span>
     </div>
 
-    <!-- Questions list -->
-    <div class="questions-list" id="questions-list"></div>
-
-    <!-- Empty / no results states -->
-    <div class="no-results" id="no-results">
-      <div class="empty-state">
-        <div class="empty-icon">🔍</div>
-        <strong style="display:block;margin-bottom:6px;color:var(--text)">No results found</strong>
-        <p>Try different keywords or <a href="#" onclick="openModal();return false;" style="color:var(--brand)">ask the community</a></p>
-      </div>
+    <div id="questions-list">
+      <div class="loading"><div class="spinner"></div><p>Loading questions...</p></div>
     </div>
-
   </div>
 
-  <!-- RIGHT: Sidebar -->
   <div class="sidebar">
-
-    <!-- Stats -->
     <div class="sidebar-card">
-      <div class="sidebar-title">
-        <span class="icon icon-blue">📊</span>
-        Community stats
-      </div>
+      <div class="sidebar-title"><span class="icon icon-blue">📊</span>Community stats</div>
       <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-num" id="stat-questions">0</div>
-          <div class="stat-label">Questions</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="stat-answers">0</div>
-          <div class="stat-label">Answers</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="stat-resolved">0</div>
-          <div class="stat-label">Resolved</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="stat-cats">9</div>
-          <div class="stat-label">Categories</div>
-        </div>
+        <div class="stat-item"><div class="stat-num" id="stat-questions">—</div><div class="stat-label">Questions</div></div>
+        <div class="stat-item"><div class="stat-num" id="stat-answers">—</div><div class="stat-label">Answers</div></div>
+        <div class="stat-item"><div class="stat-num" id="stat-resolved">—</div><div class="stat-label">Resolved</div></div>
+        <div class="stat-item"><div class="stat-num">9</div><div class="stat-label">Categories</div></div>
       </div>
     </div>
 
-    <!-- Emergency links -->
     <div class="sidebar-card">
-      <div class="sidebar-title">
-        <span class="icon icon-red">🆘</span>
-        Emergency & support
-      </div>
-      <a class="crisis-link" href="tel:999">
-        <div class="crisis-link-left">
-          <span class="crisis-name">Police / Emergency</span>
-          <span class="crisis-num">999</span>
-        </div>
-        <span class="crisis-arrow">→</span>
-      </a>
-      <a class="crisis-link" href="tel:16000">
-        <div class="crisis-link-left">
-          <span class="crisis-name">Qatar Legal Aid</span>
-          <span class="crisis-num">16000</span>
-        </div>
-        <span class="crisis-arrow">→</span>
-      </a>
-      <a class="crisis-link" href="tel:919">
-        <div class="crisis-link-left">
-          <span class="crisis-name">Qatar Charity Helpline</span>
-          <span class="crisis-num">919</span>
-        </div>
-        <span class="crisis-arrow">→</span>
-      </a>
-      <a class="crisis-link" href="tel:44391111">
-        <div class="crisis-link-left">
-          <span class="crisis-name">Hamad Hospital</span>
-          <span class="crisis-num">4439-1111</span>
-        </div>
-        <span class="crisis-arrow">→</span>
-      </a>
-      <a class="crisis-link" href="https://www.nhrc.qa" target="_blank">
-        <div class="crisis-link-left">
-          <span class="crisis-name">Human Rights Commission</span>
-          <span class="crisis-num">nhrc.qa</span>
-        </div>
-        <span class="crisis-arrow">↗</span>
-      </a>
+      <div class="sidebar-title"><span class="icon icon-red">🆘</span>Emergency & support</div>
+      <a class="crisis-link" href="tel:999"><div class="crisis-link-left"><span class="crisis-name">Police / Emergency</span><span class="crisis-num">999</span></div><span class="crisis-arrow">→</span></a>
+      <a class="crisis-link" href="tel:16000"><div class="crisis-link-left"><span class="crisis-name">Qatar Legal Aid</span><span class="crisis-num">16000</span></div><span class="crisis-arrow">→</span></a>
+      <a class="crisis-link" href="tel:919"><div class="crisis-link-left"><span class="crisis-name">Qatar Charity Helpline</span><span class="crisis-num">919</span></div><span class="crisis-arrow">→</span></a>
+      <a class="crisis-link" href="tel:44391111"><div class="crisis-link-left"><span class="crisis-name">Hamad Hospital</span><span class="crisis-num">4439-1111</span></div><span class="crisis-arrow">→</span></a>
+      <a class="crisis-link" href="https://www.nhrc.qa" target="_blank"><div class="crisis-link-left"><span class="crisis-name">Human Rights Commission</span><span class="crisis-num">nhrc.qa</span></div><span class="crisis-arrow">↗</span></a>
     </div>
 
-    <!-- How it works -->
     <div class="sidebar-card">
-      <div class="sidebar-title">
-        <span class="icon icon-green">✨</span>
-        How it works
-      </div>
-      <div class="how-item">
-        <div class="how-num">1</div>
-        <div class="how-text">Ask where to find something in Qatar</div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">2</div>
-        <div class="how-text">The community replies with real recommendations</div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">3</div>
-        <div class="how-text">Upvote the best answers to help others</div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">4</div>
-        <div class="how-text">Share the app with your WhatsApp groups</div>
-      </div>
+      <div class="sidebar-title"><span class="icon icon-green">✨</span>How it works</div>
+      <div class="how-item"><div class="how-num">1</div><div class="how-text">Ask where to find something in Qatar</div></div>
+      <div class="how-item"><div class="how-num">2</div><div class="how-text">The community replies with real recommendations</div></div>
+      <div class="how-item"><div class="how-num">3</div><div class="how-text">Upvote the best answers to help others</div></div>
+      <div class="how-item"><div class="how-num">4</div><div class="how-text">Share the app with your WhatsApp groups</div></div>
     </div>
-
   </div>
 </div>
 
-<!-- ASK MODAL -->
 <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <h2>Ask the community</h2>
@@ -842,308 +641,222 @@
     </div>
     <div class="modal-actions">
       <button class="btn-cancel" onclick="closeModal()">Cancel</button>
-      <button class="btn-submit" onclick="submitQuestion()">Post question</button>
+      <button class="btn-submit" id="submit-btn" onclick="submitQuestion()">Post question</button>
     </div>
   </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<script>
-// ── DATA ──────────────────────────────────────────────────
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import {
+  getFirestore, collection, addDoc, onSnapshot,
+  doc, updateDoc, query, orderBy, serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const app = initializeApp({
+  apiKey: "AIzaSyDpcoCb8t4EP5rKnsdsVX1luM-m5W3aWO8",
+  authDomain: "qatar-finder.firebaseapp.com",
+  projectId: "qatar-finder",
+  storageBucket: "qatar-finder.firebasestorage.app",
+  messagingSenderId: "79667668684",
+  appId: "1:79667668684:web:897a198d19c4693cf68469"
+});
+
+const db = getFirestore(app);
+
 const SEED = [
-  {
-    id: 1, title: "Where can I find hotel-quality towels in Doha?",
-    cat: "Shopping", detail: "Looking for thick, fluffy towels like you get at 5-star hotels. Budget around 150–200 QAR.",
-    author: "Sarah M.", time: "2h ago",
-    answers: [
-      { id: 1, text: "IKEA at Doha Festival City has excellent thick towels — look for the NJUTA range. Around 120 QAR for a set. Way better than most malls.", author: "Mike R.", upvotes: 14, voted: false },
-      { id: 2, text: "The Linen House in Villaggio. A bit pricier but genuinely hotel-grade. They also do custom embroidery if you want.", author: "Fatima A.", upvotes: 9, voted: false },
-      { id: 3, text: "Pottery Barn in Mall of Qatar. Slightly over budget but the quality is worth it — I've had mine for 3 years.", author: "James T.", upvotes: 6, voted: false }
-    ]
-  },
-  {
-    id: 2, title: "Best ladies-only pool or gym in Al Waab area?",
-    cat: "Family", detail: "Moved to Al Waab recently and need a gym with ladies-only hours or a fully separate ladies section.",
-    author: "Anonymous", time: "5h ago",
-    answers: [
-      { id: 4, text: "Aspire Zone has ladies-only sessions at the Aspire Academy pool — check their website for the current schedule. Really well maintained.", author: "Noor K.", upvotes: 11, voted: false },
-      { id: 5, text: "The Pearl Fitness in Al Waab has a dedicated ladies floor, not just timeslots. Monthly membership around 350 QAR.", author: "Rania S.", upvotes: 8, voted: false }
-    ]
-  },
-  {
-    id: 3, title: "Where to find a reliable plumber who doesn't overcharge expats?",
-    cat: "Services", detail: "Had a bad experience with someone off a Facebook ad. Looking for someone trusted by the community.",
-    author: "Dave H.", time: "1d ago",
-    answers: [
-      { id: 6, text: "Ask in the r/qatar subreddit — there are pinned recommendations for trusted tradespeople. I used a plumber recommended there (Mohamed, Doha Maintenance) and he was fair and showed up on time.", author: "Clara B.", upvotes: 19, voted: false }
-    ]
-  },
-  {
-    id: 4, title: "Anyone know where to get authentic South Indian food in Doha?",
-    cat: "Food", detail: "Specifically looking for proper Kerala fish curry and appam. Not the north Indian curry places.",
-    author: "Priya V.", time: "1d ago",
-    answers: [
-      { id: 7, text: "Ente Keralam in Industrial Area. Run by a Kerala family, everything is authentic. The fish moilee is exceptional. Get there early — it fills up fast.", author: "Rajan M.", upvotes: 22, voted: false },
-      { id: 8, text: "Kerala Kitchen near Souq Waqif also does great appam and stew on weekends. Call ahead to check availability — 4444-2211.", author: "Anita P.", upvotes: 13, voted: false }
-    ]
-  },
-  {
-    id: 5, title: "Can I break my employment contract without losing my visa status?",
-    cat: "Safety", detail: "My employer has not paid salary for 2 months. I want to leave but worried about the exit process.",
-    author: "Anonymous", time: "2d ago",
-    answers: [
-      { id: 9, text: "Qatar's Labour Law was updated in 2020 — you can now leave without employer permission after giving notice. Call the Ministry of Labour on 16008 or visit their office. They have a Wage Protection System complaint process specifically for unpaid salary. You are protected.", author: "Legal Aid Qatar", upvotes: 31, voted: false }
-    ]
-  },
-  {
-    id: 6, title: "Good pediatrician recommendations in West Bay or nearby?",
-    cat: "Health", detail: "Just moved here with a toddler (18 months). Looking for an English-speaking pediatrician.",
-    author: "Emma W.", time: "3d ago",
-    answers: [
-      { id: 10, text: "Dr. Sarah Al-Ansari at Al Ahli Hospital is excellent — very patient with toddlers and speaks perfect English. Wait times are reasonable if you book ahead: 4484-1000.", author: "Tom G.", upvotes: 17, voted: false },
-      { id: 11, text: "Sidra Medicine in Education City has a great pediatric department. Takes international insurance. It's a bit of a drive from West Bay but the quality is top-tier.", author: "Hana L.", upvotes: 12, voted: false }
-    ]
-  }
+  { title: "Where can I find hotel-quality towels in Doha?", cat: "Shopping", detail: "Looking for thick, fluffy towels like you get at 5-star hotels. Budget around 150–200 QAR.", author: "Sarah M.", answers: [{ text: "IKEA at Doha Festival City has excellent thick towels — look for the NJUTA range. Around 120 QAR for a set.", author: "Mike R.", upvotes: 14 }, { text: "The Linen House in Villaggio. A bit pricier but genuinely hotel-grade.", author: "Fatima A.", upvotes: 9 }, { text: "Pottery Barn in Mall of Qatar. Slightly over budget but the quality is worth it.", author: "James T.", upvotes: 6 }] },
+  { title: "Best ladies-only pool or gym in Al Waab area?", cat: "Family", detail: "Moved to Al Waab recently and need a gym with ladies-only hours or a fully separate ladies section.", author: "Anonymous", answers: [{ text: "Aspire Zone has ladies-only sessions at the Aspire Academy pool — check their website for the current schedule.", author: "Noor K.", upvotes: 11 }, { text: "The Pearl Fitness in Al Waab has a dedicated ladies floor. Monthly membership around 350 QAR.", author: "Rania S.", upvotes: 8 }] },
+  { title: "Where to find a reliable plumber who doesn't overcharge expats?", cat: "Services", detail: "Had a bad experience with someone off a Facebook ad. Looking for someone trusted by the community.", author: "Dave H.", answers: [{ text: "Ask in the r/qatar subreddit — there are pinned recommendations for trusted tradespeople. I used Mohamed at Doha Maintenance and he was fair and showed up on time.", author: "Clara B.", upvotes: 19 }] },
+  { title: "Anyone know where to get authentic South Indian food in Doha?", cat: "Food", detail: "Specifically looking for proper Kerala fish curry and appam. Not north Indian curry places.", author: "Priya V.", answers: [{ text: "Ente Keralam in Industrial Area. Run by a Kerala family, everything is authentic. The fish moilee is exceptional.", author: "Rajan M.", upvotes: 22 }, { text: "Kerala Kitchen near Souq Waqif also does great appam and stew on weekends.", author: "Anita P.", upvotes: 13 }] },
+  { title: "Can I leave my job without losing my visa status?", cat: "Safety", detail: "My employer has not paid salary for 2 months. I want to leave but worried about the exit process.", author: "Anonymous", answers: [{ text: "Qatar Labour Law 2020 — you can leave without employer permission after giving notice. Call Ministry of Labour on 16008. They have a Wage Protection System complaint process for unpaid salary. You are protected.", author: "Legal Aid Qatar", upvotes: 31 }] },
+  { title: "Good pediatrician recommendations in West Bay or nearby?", cat: "Health", detail: "Just moved here with a toddler (18 months). Looking for an English-speaking pediatrician.", author: "Emma W.", answers: [{ text: "Dr. Sarah Al-Ansari at Al Ahli Hospital — very patient with toddlers and speaks perfect English. Book ahead: 4484-1000.", author: "Tom G.", upvotes: 17 }, { text: "Sidra Medicine in Education City has a great pediatric department. Takes international insurance.", author: "Hana L.", upvotes: 12 }] },
+  { title: "Where to buy a second-hand car in Qatar without getting scammed?", cat: "Transport", detail: "Looking for a reliable used car under 30,000 QAR. Not sure which dealers to trust.", author: "Khalid R.", answers: [{ text: "Qatar Living classifieds has the largest selection. Always meet at a public place and take the car to a mechanic before paying.", author: "James W.", upvotes: 15 }, { text: "Al Meera Auto Market in Industrial Area — expats selling before leaving. Prices are fair because they're motivated.", author: "Layla S.", upvotes: 10 }] },
+  { title: "Best supermarket for Western food products in Doha?", cat: "Shopping", detail: "Missing specific brands from back home — UK and Australian products mainly.", author: "Ben T.", answers: [{ text: "Monoprix in Villaggio has the best Western selection — strong UK and French range. Expensive but stocks things no one else does.", author: "Claire M.", upvotes: 18 }, { text: "Carrefour in Mall of Qatar has a surprisingly good international aisle. Check the 'world foods' section at the back.", author: "Ahmed K.", upvotes: 9 }] }
 ];
 
-let questions = [];
-let nextId = 100;
-let nextAnswerId = 200;
+let allQuestions = [];
 let activeFilter = 'all';
 let searchQuery = '';
+let seeded = false;
 
-function load() {
-  try {
-    const saved = localStorage.getItem('qf_questions');
-    questions = saved ? JSON.parse(saved) : SEED;
-  } catch(e) {
-    questions = [...SEED];
+const q = query(collection(db, "questions"), orderBy("createdAt", "desc"));
+
+onSnapshot(q, async (snapshot) => {
+  allQuestions = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+
+  if (allQuestions.length === 0 && !seeded) {
+    seeded = true;
+    for (const item of SEED) {
+      await addDoc(collection(db, "questions"), { ...item, createdAt: serverTimestamp(), answerCount: item.answers.length });
+    }
+    return;
   }
-  nextId = Math.max(...questions.map(q => q.id), 99) + 1;
-  const allAnswers = questions.flatMap(q => q.answers || []);
-  nextAnswerId = allAnswers.length ? Math.max(...allAnswers.map(a => a.id), 199) + 1 : 200;
-}
 
-function save() {
-  try { localStorage.setItem('qf_questions', JSON.stringify(questions)); } catch(e) {}
-}
+  render();
+  updateStats();
+});
 
-// ── RENDER ─────────────────────────────────────────────────
 function render() {
-  let filtered = [...questions];
-  if (activeFilter !== 'all') filtered = filtered.filter(q => q.cat === activeFilter);
+  let filtered = [...allQuestions];
+  if (activeFilter !== 'all') filtered = filtered.filter(x => x.cat === activeFilter);
   if (searchQuery) {
-    const q = searchQuery.toLowerCase();
+    const sq = searchQuery.toLowerCase();
     filtered = filtered.filter(x =>
-      x.title.toLowerCase().includes(q) ||
-      x.cat.toLowerCase().includes(q) ||
-      (x.detail || '').toLowerCase().includes(q) ||
-      (x.answers || []).some(a => a.text.toLowerCase().includes(q))
+      x.title?.toLowerCase().includes(sq) ||
+      x.cat?.toLowerCase().includes(sq) ||
+      (x.detail || '').toLowerCase().includes(sq) ||
+      (x.answers || []).some(a => a.text?.toLowerCase().includes(sq))
     );
   }
 
   const list = document.getElementById('questions-list');
-  const noResults = document.getElementById('no-results');
-  const badge = document.getElementById('count-badge');
-
-  badge.textContent = filtered.length + (filtered.length === 1 ? ' question' : ' questions');
+  document.getElementById('count-badge').textContent = filtered.length + (filtered.length === 1 ? ' question' : ' questions');
 
   if (!filtered.length) {
-    list.innerHTML = '';
-    noResults.classList.add('visible');
-    updateStats();
+    list.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><strong style="display:block;margin-bottom:6px;color:var(--text)">No results found</strong><p style="font-size:14px">Try different keywords or <a href="#" onclick="openModal();return false;" style="color:var(--brand)">ask the community</a></p></div>`;
     return;
   }
 
-  noResults.classList.remove('visible');
-  list.innerHTML = filtered.map(q => renderCard(q)).join('');
-  updateStats();
-}
+  list.innerHTML = filtered.map(q => {
+    const answers = q.answers || [];
+    const sorted = [...answers].sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0));
+    const timeStr = q.createdAt?.toDate ? timeAgo(q.createdAt.toDate()) : 'Just now';
 
-function renderCard(q) {
-  const answerCount = (q.answers || []).length;
-  const resolved = answerCount > 0;
-  const topAnswer = (q.answers || []).sort((a,b) => b.upvotes - a.upvotes)[0];
-
-  return `
-  <div class="q-card" id="card-${q.id}">
-    <div class="q-card-header" onclick="toggleCard(${q.id})">
-      <div class="q-cat-badge">${q.cat}</div>
-      <div class="q-title">${escHtml(q.title)}</div>
-    </div>
-    <div class="q-meta">
-      <span class="q-meta-item">
-        <span class="status-dot ${resolved ? 'answered' : 'open'}"></span>
-        ${resolved ? answerCount + ' answer' + (answerCount > 1 ? 's' : '') : 'No answers yet'}
-      </span>
-      <span class="q-meta-item">🕐 ${q.time}</span>
-      <span class="q-meta-item">👤 ${escHtml(q.author || 'Anonymous')}</span>
-    </div>
-
-    <div class="answers-section" id="answers-${q.id}">
-      ${q.detail ? `<p style="font-size:13px;color:var(--text2);margin-bottom:14px;line-height:1.5">${escHtml(q.detail)}</p>` : ''}
-
-      ${(q.answers || []).sort((a,b) => b.upvotes - a.upvotes).map((a, i) => `
-        <div class="answer-item ${i === 0 && a.upvotes > 0 ? 'top-answer' : ''}">
-          ${i === 0 && a.upvotes > 0 ? '<div class="top-badge">✅ Top answer</div>' : ''}
-          <div class="answer-text">${escHtml(a.text)}</div>
-          <div class="answer-footer">
-            <span class="answer-author">— ${escHtml(a.author || 'Anonymous')}</span>
-            <button class="upvote-btn ${a.voted ? 'voted' : ''}" onclick="upvote(${q.id}, ${a.id})">
-              ▲ ${a.upvotes}
-            </button>
-          </div>
-        </div>
-      `).join('')}
-
-      <div class="add-answer">
-        <input type="text" id="ans-input-${q.id}" placeholder="Share what you know...">
-        <button onclick="submitAnswer(${q.id})">Reply</button>
+    return `<div class="q-card" id="card-${q.id}">
+      <div class="q-card-header" onclick="toggleCard('${q.id}')">
+        <div class="q-cat-badge">${esc(q.cat)}</div>
+        <div class="q-title">${esc(q.title)}</div>
       </div>
-    </div>
-  </div>`;
+      <div class="q-meta">
+        <span class="q-meta-item"><span class="status-dot ${answers.length > 0 ? 'answered' : 'open'}"></span>${answers.length > 0 ? answers.length + ' answer' + (answers.length > 1 ? 's' : '') : 'No answers yet'}</span>
+        <span class="q-meta-item">🕐 ${timeStr}</span>
+        <span class="q-meta-item">👤 ${esc(q.author || 'Anonymous')}</span>
+      </div>
+      <div class="answers-section" id="answers-${q.id}">
+        ${q.detail ? `<p style="font-size:13px;color:var(--text2);margin-bottom:14px;line-height:1.5">${esc(q.detail)}</p>` : ''}
+        ${sorted.map((a, i) => `
+          <div class="answer-item ${i === 0 && (a.upvotes || 0) > 0 ? 'top-answer' : ''}">
+            ${i === 0 && (a.upvotes || 0) > 0 ? '<div class="top-badge">✅ Top answer</div>' : ''}
+            <div class="answer-text">${esc(a.text)}</div>
+            <div class="answer-footer">
+              <span class="answer-author">— ${esc(a.author || 'Anonymous')}</span>
+              <button class="upvote-btn" onclick="upvote('${q.id}', ${i})">▲ ${a.upvotes || 0}</button>
+            </div>
+          </div>`).join('')}
+        <div class="add-answer">
+          <input type="text" id="ans-${q.id}" placeholder="Share what you know...">
+          <button onclick="submitAnswer('${q.id}')">Reply</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function updateStats() {
-  const all = JSON.parse(localStorage.getItem('qf_questions') || JSON.stringify(SEED));
-  const totalAnswers = all.reduce((s, q) => s + (q.answers||[]).length, 0);
-  const resolved = all.filter(q => (q.answers||[]).length > 0).length;
-  document.getElementById('stat-questions').textContent = all.length;
-  document.getElementById('stat-answers').textContent = totalAnswers;
-  document.getElementById('stat-resolved').textContent = resolved;
+  document.getElementById('stat-questions').textContent = allQuestions.length;
+  document.getElementById('stat-answers').textContent = allQuestions.reduce((s, q) => s + (q.answers || []).length, 0);
+  document.getElementById('stat-resolved').textContent = allQuestions.filter(q => (q.answers || []).length > 0).length;
 }
 
-// ── INTERACTIONS ────────────────────────────────────────────
-function toggleCard(id) {
+window.toggleCard = (id) => {
   const section = document.getElementById('answers-' + id);
   const card = document.getElementById('card-' + id);
   const isOpen = section.classList.contains('visible');
-  // Close all
   document.querySelectorAll('.answers-section').forEach(s => s.classList.remove('visible'));
   document.querySelectorAll('.q-card').forEach(c => c.classList.remove('open'));
-  if (!isOpen) {
-    section.classList.add('visible');
-    card.classList.add('open');
-  }
-}
+  if (!isOpen) { section.classList.add('visible'); card.classList.add('open'); }
+};
 
-function filterCat(cat, el) {
+window.upvote = async (qId, idx) => {
+  const question = allQuestions.find(x => x.id === qId);
+  if (!question) return;
+  const answers = [...(question.answers || [])];
+  answers[idx] = { ...answers[idx], upvotes: (answers[idx].upvotes || 0) + 1 };
+  await updateDoc(doc(db, "questions", qId), { answers });
+};
+
+window.submitAnswer = async (qId) => {
+  const input = document.getElementById('ans-' + qId);
+  const text = input.value.trim();
+  if (!text) return;
+  const question = allQuestions.find(x => x.id === qId);
+  if (!question) return;
+  const updatedAnswers = [...(question.answers || []), { text, author: 'Community', upvotes: 0 }];
+  await updateDoc(doc(db, "questions", qId), { answers: updatedAnswers, answerCount: updatedAnswers.length });
+  input.value = '';
+  showToast('Answer posted!');
+  setTimeout(() => {
+    document.getElementById('answers-' + qId)?.classList.add('visible');
+    document.getElementById('card-' + qId)?.classList.add('open');
+  }, 200);
+};
+
+window.submitQuestion = async () => {
+  const title = document.getElementById('q-title').value.trim();
+  if (!title) { document.getElementById('q-title').focus(); return; }
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true; btn.textContent = 'Posting...';
+  await addDoc(collection(db, "questions"), {
+    title,
+    cat: document.getElementById('q-cat').value,
+    detail: document.getElementById('q-detail').value.trim(),
+    author: document.getElementById('q-name').value.trim() || 'Anonymous',
+    answers: [],
+    answerCount: 0,
+    createdAt: serverTimestamp()
+  });
+  btn.disabled = false; btn.textContent = 'Post question';
+  closeModal();
+  showToast('Question posted! The community will answer soon.');
+};
+
+window.filterCat = (cat, el) => {
   activeFilter = cat;
   document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
   el.classList.add('active');
   render();
-}
+};
 
-function handleSearch(val) {
+window.handleSearch = (val) => {
   searchQuery = val.trim();
-  // Sync both search inputs
   document.getElementById('header-search').value = val;
   document.getElementById('hero-search').value = val;
   render();
-}
+};
 
-function upvote(qId, aId) {
-  const q = questions.find(x => x.id === qId);
-  if (!q) return;
-  const a = q.answers.find(x => x.id === aId);
-  if (!a) return;
-  a.voted = !a.voted;
-  a.upvotes += a.voted ? 1 : -1;
-  save();
-  render();
-}
-
-function submitAnswer(qId) {
-  const input = document.getElementById('ans-input-' + qId);
-  const text = input.value.trim();
-  if (!text) return;
-  const q = questions.find(x => x.id === qId);
-  if (!q) return;
-  q.answers.push({
-    id: nextAnswerId++,
-    text,
-    author: 'You',
-    upvotes: 0,
-    voted: false
-  });
-  save();
-  render();
-  // Re-open card
-  setTimeout(() => {
-    document.getElementById('answers-' + qId).classList.add('visible');
-    document.getElementById('card-' + qId).classList.add('open');
-  }, 10);
-  showToast('Answer posted!');
-}
-
-// ── MODAL ──────────────────────────────────────────────────
-function openModal() {
+window.openModal = () => {
   document.getElementById('modal').classList.add('open');
   setTimeout(() => document.getElementById('q-title').focus(), 100);
-}
+};
 
-function closeModal() {
+window.closeModal = () => {
   document.getElementById('modal').classList.remove('open');
-  document.getElementById('q-title').value = '';
-  document.getElementById('q-detail').value = '';
-  document.getElementById('q-name').value = '';
-}
+  ['q-title','q-detail','q-name'].forEach(id => document.getElementById(id).value = '');
+};
 
-function submitQuestion() {
-  const title = document.getElementById('q-title').value.trim();
-  const cat = document.getElementById('q-cat').value;
-  const detail = document.getElementById('q-detail').value.trim();
-  const name = document.getElementById('q-name').value.trim() || 'Anonymous';
-
-  if (!title) {
-    document.getElementById('q-title').focus();
-    document.getElementById('q-title').style.borderColor = 'var(--brand)';
-    return;
-  }
-
-  const newQ = {
-    id: nextId++,
-    title,
-    cat,
-    detail,
-    author: name,
-    time: 'Just now',
-    answers: []
-  };
-
-  questions.unshift(newQ);
-  save();
-  closeModal();
-  activeFilter = 'all';
-  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
-  document.querySelector('.cat-pill').classList.add('active');
-  render();
-  showToast('Question posted! The community will answer soon.');
-}
-
-// ── TOAST ──────────────────────────────────────────────────
-function showToast(msg) {
+window.showToast = (msg) => {
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 3000);
+};
+
+function esc(str) {
+  return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ── ESCAPE ─────────────────────────────────────────────────
-function escHtml(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function timeAgo(date) {
+  const diff = Math.floor((Date.now() - date) / 1000);
+  if (diff < 60) return 'Just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  return Math.floor(diff/86400) + 'd ago';
 }
 
-// ── KEYBOARD SHORTCUTS ─────────────────────────────────────
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeModal();
-});
-
-// ── INIT ───────────────────────────────────────────────────
-load();
-render();
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
